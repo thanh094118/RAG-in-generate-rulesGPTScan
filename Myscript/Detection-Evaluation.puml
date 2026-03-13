@@ -1,0 +1,39 @@
+@startuml
+title <size:16>GPTScan Detection & Evaluation Pipeline</size>
+
+skinparam backgroundColor #1E1E1E
+skinparam defaultFontColor #FFFFFF
+skinparam arrowColor #00FF00
+skinparam cloudBackgroundColor #333333
+skinparam cloudBorderColor #666666
+skinparam rectangleBackgroundColor #333333
+skinparam rectangleBorderColor #666666
+skinparam circleBackgroundColor #333333
+skinparam circleBorderColor #666666
+skinparam defaultTextAlignment center
+skinparam shadowing false
+skinparam padding 10
+skinparam margin 5
+
+' Xoay ngang
+left to right direction
+
+' Input Stage
+rectangle "<size:12>Generated\nDetection Rules</size>" as genrules
+cloud "<size:12>Smart Contract\nDatasets</size>" as datasets
+
+' Scanner Stage
+rectangle "<size:12>GPTScan\nScanner</size>" as gptscan
+
+' Output Stage
+rectangle "<size:12>Evaluation\nPipeline</size>" as eval
+circle "<size:12>Results &\nMetrics</size>" as metrics
+
+' Flow ngang
+genrules --> gptscan : "<size:9>rules</size>"
+datasets --> gptscan : "<size:9>contracts</size>"
+
+gptscan --> eval : "<size:9>scan results</size>"
+eval --> metrics : "<size:9>metrics</size>"
+
+@enduml

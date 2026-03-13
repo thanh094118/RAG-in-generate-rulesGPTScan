@@ -1,0 +1,48 @@
+@startuml
+title <size:16>Exploit Knowledge & Rule Generation Pipeline 
+
+skinparam backgroundColor #1E1E1E
+skinparam defaultFontColor #FFFFFF
+skinparam arrowColor #00FF00
+skinparam cloudBackgroundColor #333333
+skinparam cloudBorderColor #666666
+skinparam rectangleBackgroundColor #333333
+skinparam rectangleBorderColor #666666
+skinparam circleBackgroundColor #333333
+skinparam circleBorderColor #666666
+skinparam defaultTextAlignment center
+skinparam shadowing false
+skinparam padding 10
+skinparam margin 5
+
+' Xoay ngang diagram
+left to right direction
+
+' Hàng 1: Data Sources
+cloud "<size:12>DeFiLlama\nExploit " as defillama
+cloud "<size:12>HackerOne\nBug Bounty " as hackerone
+
+' Hàng 2: Processing
+rectangle "<size:12>Exploit\nExtraction " as extraction
+rectangle "<size:12>Exploit\nKnowledge Base " as kb
+
+' Hàng 3: AI/RAG
+rectangle "<size:12>RAG\nRetrieval " as rag
+circle "<size:12>LLM\nRule Generator " as llm
+
+' Hàng 4: Output
+rectangle "<size:12>Rule\nTemplate " as rules
+rectangle "<size:12>Generated\nDetection Rules " as genrules
+
+' Flow ngang với arrows
+defillama --> extraction : "<size:9>exploit</size>"
+hackerone --> extraction : "<size:9>reports</size>"
+
+extraction --> kb : "<size:9>patterns</size>"
+kb --> rag : "<size:9>knowledge</size>"
+rag --> llm : "<size:9>retrieval</size>"
+
+llm --> rules : "<size:9>rules</size>"
+rules --> genrules : "<size:9>templates</size>"
+
+@enduml
