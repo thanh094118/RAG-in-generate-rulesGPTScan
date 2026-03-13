@@ -1,6 +1,7 @@
 # AI-Assisted Smart Contract Vulnerability Detection
 
-![System Architecture](architecture/gptscan_pipeline.png)
+![System Architecture](Myscript/Rule-Generation.png)  
+![System Architecture](Myscript/Detection-Evaluation.png)  
 
 Research project extending the **GPTScan smart contract vulnerability scanner** with an AI-assisted rule generation system.  
 <sub><i>base vulnerability scanner:
