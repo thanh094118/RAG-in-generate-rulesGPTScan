@@ -8,7 +8,9 @@ Research project extending the **GPTScan smart contract vulnerability scanner** 
  <a href="https://arxiv.org/abs/2308.03314">[GPTScan]</a></i></sub>  
 <sub><i>exploit data sources:
  <a href="https://defillama.com/hacks">[DeFiLlama]</a> and 
- <a href="https://hackerone.com/hacktivity">[HackerOne]</a></i></sub>
+ <a href="https://hackerone.com/hacktivity">[HackerOne]</a></i></sub>  
+<sub><i>using Retrieval-Augmented Generation (RAG) by khoj:
+ <a href="https://github.com/khoj-ai/khoj.git">[]</a></i></sub>  
 
 The project focuses on **automatically generating vulnerability detection rules** for smart contract analysis by combining **RAG (Retrieval-Augmented Generation)** with exploit knowledge extracted from real-world DeFi incidents.
 
