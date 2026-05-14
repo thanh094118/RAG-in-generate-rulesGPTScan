@@ -13,7 +13,7 @@ Research project extending the **GPTScan smart contract vulnerability scanner** 
  <a href="https://github.com/khoj-ai/khoj.git">[]</a></i></sub>  
 
 The project focuses on **automatically generating vulnerability detection rules** for smart contract analysis by combining **RAG (Retrieval-Augmented Generation)** with exploit knowledge extracted from real-world DeFi incidents.
-
+ dfbc
 ---
 
 ## Skills & Technologies
