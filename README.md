@@ -24,7 +24,7 @@ The project focuses on **automatically generating vulnerability detection rules*
 **Programming:** Python, data processing pipelines  
 
 **Tools:** GPTScan, Slither, Python, OpenAI API
-
+séiufiusdv
 ---
 
 ## Exploit Pattern Analysis
